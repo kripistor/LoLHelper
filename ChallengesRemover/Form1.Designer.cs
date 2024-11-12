@@ -28,12 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            removeChallengesButton = new Button();
+            GreetingLabel = new Label();
+            SuspendLayout();
+            // 
+            // removeChallengesButton
+            // 
+            removeChallengesButton.Location = new Point(12, 114);
+            removeChallengesButton.Name = "removeChallengesButton";
+            removeChallengesButton.Size = new Size(260, 70);
+            removeChallengesButton.TabIndex = 0;
+            removeChallengesButton.Text = "Remove Challenges";
+            removeChallengesButton.UseVisualStyleBackColor = true;
+            removeChallengesButton.Click += removeChallengesButton_Click;
+            // 
+            // GreetingLabel
+            // 
+            GreetingLabel.AutoSize = true;
+            GreetingLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            GreetingLabel.Location = new Point(120, 9);
+            GreetingLabel.Name = "GreetingLabel";
+            GreetingLabel.Size = new Size(51, 21);
+            GreetingLabel.TabIndex = 1;
+            GreetingLabel.Text = "Hello";
+            GreetingLabel.TextAlign = ContentAlignment.MiddleCenter;
+            GreetingLabel.Click += GreetingLabel_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(284, 461);
+            Controls.Add(GreetingLabel);
+            Controls.Add(removeChallengesButton);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_LoadAsync;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button removeChallengesButton;
+        private Label GreetingLabel;
     }
 }
