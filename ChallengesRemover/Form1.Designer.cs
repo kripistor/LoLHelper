@@ -30,11 +30,13 @@
         {
             removeChallengesButton = new Button();
             GreetingLabel = new Label();
+            GitHubLinkButton = new Button();
+            BannedInfoButton = new Button();
             SuspendLayout();
             // 
             // removeChallengesButton
             // 
-            removeChallengesButton.Location = new Point(12, 114);
+            removeChallengesButton.Location = new Point(12, 85);
             removeChallengesButton.Name = "removeChallengesButton";
             removeChallengesButton.Size = new Size(260, 70);
             removeChallengesButton.TabIndex = 0;
@@ -54,11 +56,33 @@
             GreetingLabel.TextAlign = ContentAlignment.MiddleCenter;
             GreetingLabel.Click += GreetingLabel_Click;
             // 
+            // GitHubLinkButton
+            // 
+            GitHubLinkButton.Location = new Point(12, 161);
+            GitHubLinkButton.Name = "GitHubLinkButton";
+            GitHubLinkButton.Size = new Size(260, 70);
+            GitHubLinkButton.TabIndex = 2;
+            GitHubLinkButton.Text = "Github Project";
+            GitHubLinkButton.UseVisualStyleBackColor = true;
+            GitHubLinkButton.Click += GitHubLinkButton_Click;
+            // 
+            // BannedInfoButton
+            // 
+            BannedInfoButton.Location = new Point(12, 237);
+            BannedInfoButton.Name = "BannedInfoButton";
+            BannedInfoButton.Size = new Size(260, 70);
+            BannedInfoButton.TabIndex = 3;
+            BannedInfoButton.Text = "Will I be banned?";
+            BannedInfoButton.UseVisualStyleBackColor = true;
+            BannedInfoButton.Click += BannedInfoButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 461);
+            ClientSize = new Size(284, 334);
+            Controls.Add(BannedInfoButton);
+            Controls.Add(GitHubLinkButton);
             Controls.Add(GreetingLabel);
             Controls.Add(removeChallengesButton);
             Name = "Form1";
@@ -72,5 +96,7 @@
 
         private Button removeChallengesButton;
         private Label GreetingLabel;
+        private Button GitHubLinkButton;
+        private Button BannedInfoButton;
     }
 }
