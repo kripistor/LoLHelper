@@ -11,7 +11,10 @@ namespace ChallengesRemover
             InitializeComponent();
             this.Text = "Challenge Remover";
             this.ShowIcon = true;
-            this.Icon = new Icon("app.ico");
+            using (var stream = this.GetType().Assembly.GetManifestResourceStream("ChallengesRemover.app.ico"))
+            {
+                this.Icon = new Icon(stream);
+            }
         }
 
         private async Task<(string authToken, string port)?> GetTokenAndPortAsync()

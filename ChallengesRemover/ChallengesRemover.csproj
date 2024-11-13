@@ -7,6 +7,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>app.ico</ApplicationIcon>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained> 
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier> 
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,9 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="app.ico">
+    <None Include="app.ico">
+      <Link>app.ico</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <EmbeddedResource Include="app.ico" />
   </ItemGroup>
 
 </Project>
