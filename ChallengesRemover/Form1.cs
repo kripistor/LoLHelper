@@ -9,6 +9,9 @@ namespace ChallengesRemover
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Challenge Remover";
+            this.ShowIcon = true;
+            this.Icon = new Icon("app.ico");
         }
 
         private async Task<(string authToken, string port)?> GetTokenAndPortAsync()
@@ -73,7 +76,7 @@ namespace ChallengesRemover
 
         private void BannedInfoButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The app operates using the publicly available Riot Games API and built-in functionalities of the League client. It does not modify, interfere with, or give any gameplay advantages. All interactions are strictly limited to the client’s allowed commands and functionalities.");
+            MessageBox.Show("The app operates using the publicly available Riot Games API and built-in functionalities of the League client. It does not modify, interfere with, or give any gameplay advantages. All interactions are strictly limited to the clientï¿½s allowed commands and functionalities.");
         }
     }
 }
