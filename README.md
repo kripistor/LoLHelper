@@ -1,4 +1,4 @@
-### ChallengesRemover
+### LoLHelper
 ---
 Remove your challenge tokens from account in 1 click
 ### App functionality
