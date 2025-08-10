@@ -23,7 +23,7 @@ If you prefer to build the application yourself, follow the steps below:
 1. **Clone the Repository**:
    Clone this repository to your local machine using Git:
    ```
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/kripistor/LoLHelper.git
    ```
 2. **Restore Dependencies**:
    Run the following command in the terminal to restore the project dependencies:
