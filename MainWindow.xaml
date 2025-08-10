@@ -1,0 +1,58 @@
+﻿<Window x:Class="LoLHelper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoLHelper" Height="450" Width="320"
+        ResizeMode="NoResize"
+        Background="#FF1E1E2F" 
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI"
+        Icon="icon.ico"
+        >
+    <StackPanel Margin="20" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+        <Label Name="GreetingLabel" FontSize="15" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30">Hello</Label>
+
+        <Button Name="RemoveChallengesButton" Height="50" Margin="0,0,0,15" 
+                Background="#FF3A3F5C" Foreground="White" FontWeight="SemiBold"
+                BorderBrush="#FF5A5E7A" BorderThickness="1" 
+                Cursor="Hand"
+                Click="RemoveChallengesButton_Click"
+                
+                >
+            Remove Challenges
+            <Button.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.4" />
+            </Button.Effect>
+        </Button>
+
+        <Button Name="GitHubLinkButton" Height="50" Margin="0,0,0,15" 
+                Background="#FF3A3F5C" Foreground="White" FontWeight="SemiBold"
+                BorderBrush="#FF5A5E7A" BorderThickness="1"
+                Cursor="Hand"
+                Click="GitHubLinkButton_Click"
+                >
+            GitHub Project
+            <Button.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.4" />
+            </Button.Effect>
+        </Button>
+
+        <Button Name="BannedInfoButton" Height="50" Margin="0,0,0,25" 
+                Background="#FF3A3F5C" Foreground="White" FontWeight="SemiBold"
+                BorderBrush="#FF5A5E7A" BorderThickness="1"
+                Cursor="Hand"
+                Click="BannedInfoButton_Click"
+                >
+            Will I be banned?
+            <Button.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="2" Opacity="0.4" />
+            </Button.Effect>
+        </Button>
+
+        <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center">
+            <TextBlock Text="Auto Accept Match" Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <CheckBox Name="AutoAcceptCheckBox" HorizontalAlignment="Center"
+                Checked="AutoAcceptCheckBox_Checked"
+                Unchecked="AutoAcceptCheckBox_Unchecked"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
