@@ -6,7 +6,7 @@ Remove your challenge tokens from account in 1 click
 ![Video_241113123358](https://github.com/user-attachments/assets/2a491a8a-cbbf-4e0c-870f-0e4b5c5cfc9a)
 
 ### Download
-[Download Windows desktop app](https://github.com/kripistor/ChallengesRemover/releases/download/v1.0.0/ChallengesRemover.exe)
+[Download Windows desktop app](https://github.com/kripistor/LoLHelper/releases)
 ### Important Note
 ---
 Please note that some antivirus programs might flag the application as suspicious. This is a common issue with new or lesser-known apps, especially those packaged in single executable files. **Rest assured, there are no viruses**.
