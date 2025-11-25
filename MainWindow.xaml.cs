@@ -37,7 +37,7 @@ namespace LoLHelper
             {
                 var response = await _lcu.RequestAsync("/lol-chat/v1/me");
                 dynamic userInfo = JsonConvert.DeserializeObject(response);
-                GreetingLabel.Content = $"Hello, {userInfo.gameName}!\nWelcome to Challenge Remover";
+                GreetingLabel.Content = $"Hello, {userInfo.gameName}!\nWelcome to LoLHelper";
             }
             catch
             {
@@ -88,7 +88,7 @@ namespace LoLHelper
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://github.com/kripistor/ChallengesRemover",
+                FileName = "https://github.com/kripistor/LoLHelper",
                 UseShellExecute = true
             });
         }
